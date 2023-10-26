@@ -1,17 +1,67 @@
-/* Error: Undefined variable.
- *    ,
- * 34 |   font-family: $fontFamily;
- *    |                ^^^^^^^^^^^
- *    '
- *   sass\style.scss 34:16  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 34 \2502    font-family: $fontFamily;\d\a    \2502                 ^^^^^^^^^^^\a    \2575 \a   sass\\style.scss 34:16  root stylesheet";
+@charset "UTF-8";
+/*變數*/
+body {
+  font-size: 20px;
+  font-family: "Microsoft JhengHei";
+  margin: 10px auto 10px;
+  padding: 0;
+  color: #666;
+  background-color: rgb(171, 255, 162);
 }
+
+.a1 {
+  margin: 20px;
+}
+
+.container .wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.container .wrapper h1 {
+  font-size: 50px;
+}
+.container .wrapper nav {
+  width: 100%;
+}
+.container .wrapper nav::before {
+  content: "";
+}
+.container .wrapper nav ul {
+  list-style: none;
+  display: flex;
+}
+.container .wrapper nav ul li {
+  min-width: 120px;
+  background-color: #e4e4e4;
+}
+.container .wrapper nav ul li a {
+  color: #fa1212;
+  text-decoration: none;
+}
+.container .wrapper nav ul li a:hover {
+  color: rgb(255, 174, 0);
+}
+.container .wrapper .content .btn {
+  padding: 10px;
+  text-align: center;
+  max-width: 200px;
+  cursor: pointer;
+}
+.container .wrapper .content .btn-blue {
+  background-color: #0004f6;
+  transition: 0.3s all ease;
+  color: #fff;
+}
+.container .wrapper .content .btn-blue:hover {
+  background-color: #001d7d;
+}
+.container .wrapper .content .btn-red {
+  background-color: #f20;
+  color: #fff;
+}
+.container .wrapper .content .btn-yellow {
+  background-color: rgb(246, 255, 0);
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

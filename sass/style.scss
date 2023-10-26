@@ -1,3 +1,7 @@
+//  vonder
+// @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
 //base
 @import "base/var";
 @import "base/color";
@@ -7,6 +11,7 @@
 // component
 @import "component/btn";
 @import "component/input";
+@import "component/body";
 
 
 // layout
@@ -24,20 +29,13 @@
 
 
 
-h1 {
-  font-size: map-get($title, h2);
-}
 
 
-body {
-  font-size: $fontsize;
-  font-family: $fontFamily;
-  margin: $margin;
-  padding: 0;
-  color: $fontColor;
-  background-color: rgb(171, 255, 162);
-  font-weight: null; //null 刪除屬性
-}
+
+
+
+
+
 
 
 
