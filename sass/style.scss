@@ -1,12 +1,4 @@
-/*變數*/
-$fontsize : 20px; //數值
-$fontColor : #666; // 顏色
-$margin : 10px auto 10px; //list
-$title :(key : value,
-  h1 : 50px,
-  h2 : 40px); // map
-
-$fontFamily : "Microsoft JhengHei"; //字串
+@import "base/var";
 
 
 
