@@ -1,4 +1,26 @@
+//base
 @import "base/var";
+@import "base/color";
+@import "base/font";
+@import "base/spacing";
+
+// component
+@import "component/btn";
+@import "component/input";
+
+
+// layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/banner";
+@import "layout/login";
+@import "layout/cart";
+
+
+// page
+
+@import "page/index";
+@import "page/about";
 
 
 
