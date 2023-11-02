@@ -1,0 +1,18 @@
+
+@mixin center($w) {
+    margin: auto;
+    width: $w;
+  }
+
+
+  @mixin layout($w) {
+    @if $w ==100 {
+      width: 100%;
+    }
+  
+    @else {
+      width: $w;
+      margin: 0 auto;
+    }
+  }
+  

@@ -4,14 +4,19 @@
 
 //base
 @import "base/var";
+@import "base/reset";
 @import "base/color";
 @import "base/font";
 @import "base/spacing";
+
+// mixin 
+@import "mixin/mixins";
 
 // component
 @import "component/btn";
 @import "component/input";
 @import "component/body";
+@import "component/title";
 
 
 // layout
@@ -124,10 +129,6 @@ $a : 30px !default;
 // }
 
 
-@mixin center($w) {
-  margin: auto;
-  width: $w;
-}
 
 .spec {
   @include center(300px);
@@ -144,20 +145,5 @@ $a : 30px !default;
 
 
 
-@mixin layout($w) {
-  @if $w ==100 {
-    width: 100%;
-  }
-
-  @else {
-    width: $w;
-    margin: 0 auto;
-  }
-}
 
 
-.container {
-  @include layout(100);
-  background-color: #cad8c5;
-  height: 100vh;
-}

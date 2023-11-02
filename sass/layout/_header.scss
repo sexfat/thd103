@@ -1,0 +1,15 @@
+header {
+   @include layout(100);
+   background-color: #F5DE75;
+   .wrapper_inner {
+      @include layout(1200px);
+      height: 80px;
+      display: flex;
+      .logo {
+       width: 95px;
+       height: 50px;
+       background-color: #bdff38;
+      }
+
+   }
+}
