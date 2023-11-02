@@ -1,11 +1,26 @@
 .container {
-    @include layout(100);
-    background-color: #f1f1f1;
-    .content {
-      .spec1 {
-        @include layout(800px);
-        min-height: 184px;
-      
+  @include layout(100);
+  background-color: #f1f1f1;
+  @include t(){
+    background-color: #bcffb4;
+  }
+  @include m(){
+     background-color: #aafcff;
+  }
+
+  .content {
+    .spec1 {
+      @include layout(800px);
+      min-height: 184px;
+
+      @include t() {
+        @include layout(600px);
       }
+
+      @include m() {
+        @include layout(80%)
+      }
+
     }
   }
+}

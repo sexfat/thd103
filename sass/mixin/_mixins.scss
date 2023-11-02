@@ -16,3 +16,34 @@
     }
   }
   
+// 按鈕
+  @mixin btn(){
+    color : #333;
+    padding: 10px 30px; 
+    border-radius: 8px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #E2E2E2;
+    cursor: pointer;
+    transition: .2s all ease;
+    &:hover {
+     background-color: #B8B8B8;
+    }
+ }
+
+//平板
+@mixin t(){
+  @media  all and (max-width : $tablet_breakpoint){
+   @content
+  }
+};
+
+@mixin m(){
+  @media  all and (max-width : $mobile_breakpoint){
+   @content
+  }
+}
+
+
+
+

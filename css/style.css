@@ -62,6 +62,7 @@ table {
   font-size: 12px;
   background-color: #E2E2E2;
   cursor: pointer;
+  transition: 0.2s all ease;
   width: 84px;
 }
 .btn:hover {
@@ -76,9 +77,25 @@ table {
   font-size: 12px;
   background-color: #E2E2E2;
   cursor: pointer;
+  transition: 0.2s all ease;
   width: 110px;
 }
 .btn-lg:hover {
+  background-color: #B8B8B8;
+}
+
+.btn-xxl {
+  color: #333;
+  padding: 10px 30px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 12px;
+  background-color: #E2E2E2;
+  cursor: pointer;
+  transition: 0.2s all ease;
+  width: 150px;
+}
+.btn-xxl:hover {
   background-color: #B8B8B8;
 }
 
@@ -125,10 +142,32 @@ header .wrapper_inner .logo {
   width: 100%;
   background-color: #f1f1f1;
 }
+@media all and (max-width: 996px) {
+  .container {
+    background-color: #bcffb4;
+  }
+}
+@media all and (max-width: 720px) {
+  .container {
+    background-color: #aafcff;
+  }
+}
 .container .content .spec1 {
   width: 800px;
   margin: 0 auto;
   min-height: 184px;
+}
+@media all and (max-width: 996px) {
+  .container .content .spec1 {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 720px) {
+  .container .content .spec1 {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .a1 {
