@@ -50,13 +50,14 @@
         gsap.to('.box', {
             x: 400,
             y: 400,
-            ease: "bounce.out",
-            duration: 2,
+            // ease: "bounce.out",
+            duration: 1,
             backgroundColor: '#f20',
             scrollTrigger: {
                 trigger: ".section2",
-                start: "200 center",
-                end: 800,
+                start: "100 center",
+                toggleActions : 'play none none reverse',
+                end: 500,
                 scrub: 1, 
                 markers: {startColor: "white", endColor: "white", fontSize: "16px", fontWeight: "bold", indent: 20}
 
