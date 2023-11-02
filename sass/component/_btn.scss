@@ -1,0 +1,23 @@
+@mixin btn(){
+   color : #333;
+   padding: 10px 30px; 
+   border-radius: 8px;
+   text-align: center;
+   font-size: 12px;
+   background-color: #E2E2E2;
+   cursor: pointer;
+   &:hover {
+    background-color: #B8B8B8;
+   }
+
+}
+
+.btn {
+  @include btn();
+  width: 84px;
+}
+
+.btn-lg {
+    @include btn();
+    width: 110px;
+  }

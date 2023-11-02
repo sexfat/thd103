@@ -54,6 +54,34 @@ table {
   border-spacing: 0;
 }
 
+.btn {
+  color: #333;
+  padding: 10px 30px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 12px;
+  background-color: #E2E2E2;
+  cursor: pointer;
+  width: 84px;
+}
+.btn:hover {
+  background-color: #B8B8B8;
+}
+
+.btn-lg {
+  color: #333;
+  padding: 10px 30px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 12px;
+  background-color: #E2E2E2;
+  cursor: pointer;
+  width: 110px;
+}
+.btn-lg:hover {
+  background-color: #B8B8B8;
+}
+
 body {
   font-size: 16px;
   font-family: "Microsoft JhengHei";
