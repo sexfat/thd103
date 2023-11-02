@@ -5,5 +5,10 @@ $title :(key : value,
   h2 : 40px); // map
 
 
+  
+$a : 20px;
+$a : 30px !default;
+
+
   $tablet_breakpoint : 996px;
   $mobile_breakpoint : 720px;
