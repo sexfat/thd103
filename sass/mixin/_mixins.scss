@@ -42,7 +42,33 @@
   @media  all and (max-width : $mobile_breakpoint){
    @content
   }
+};
+
+
+@mixin fontstyle($fontfmaily : zh){
+     
+  @if $fontfmaily == "zh"{
+      font-family:"微軟正黑";
+  }@else if $fontfmaily == "en" {
+      font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
 }
+
+
+@mixin bgc($color:black){
+  @if $color ==yellow {
+    background-color: rgb(255, 205, 5);
+  }
+
+  @else if $color ==black {
+    background-color: #333;
+  }
+  @else if $color ==red {
+    background-color: #fd3d08;
+  }
+
+}
+
 
 
 
