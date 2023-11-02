@@ -64,4 +64,18 @@ body {
   color: #fff;
 }
 
+.spec {
+  margin: auto;
+  width: 300px;
+  height: 400px;
+  background-color: #eaff00;
+}
+
+.aa {
+  margin: auto;
+  width: 300px;
+  height: 500px;
+  background-color: #f20;
+}
+
 /*# sourceMappingURL=style.css.map */

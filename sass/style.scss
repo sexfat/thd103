@@ -110,3 +110,24 @@ $a : 30px !default;
     }
   }
 }
+
+
+@mixin center(){
+  margin : auto;
+  width:  300px;
+}
+
+.spec {
+   @include center();
+   height: 400px;
+   background-color: #eaff00;
+
+}
+
+.aa {
+   @include center();
+   height: 500px;
+   background-color: #f20;
+
+}
+
