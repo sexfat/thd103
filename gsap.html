@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於我們</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="css/gsap.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="panel">
+            <ul>
+                <li class="s1">01</li>
+                <li class="s2">02</li>
+                <li class="s3">03</li>
+                <li class="s4">04</li>
+                <li class="s5">05</li>
+            </ul>
+        </div>
+        <section class="section1">
+          
+
+        </section>
+        <section class="section2">
+            <div class="box"></div>
+            <h2>002</h2>
+        </section>
+        <section class="section3">
+            <h2>003</h2>
+        </section>
+        <section class="section4">
+            <h2>004</h2>
+        </section>
+        <section class="section5">
+            <h2>005</h2>
+        </section>
+
+    </div>
+
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        let tl = gsap.timeline();
+        
+        gsap.to('.box', {
+            x: 400,
+            y: 400,
+            ease: "bounce.out",
+            duration: 2,
+            backgroundColor: '#f20',
+            scrollTrigger: {
+                trigger: ".section2",
+                start: "200 center",
+                end: 800,
+                scrub: 1, 
+                markers: {startColor: "white", endColor: "white", fontSize: "16px", fontWeight: "bold", indent: 20}
+
+            }
+
+        });
+        gsap.to('.panel li' , {
+            y : 120,
+            delay: 1.5,
+            stagger: 0.1,
+
+        })
+        //  let section01 = gsap.to(window, { duration: 2, scrollTo: { y: ".section3" } });
+        document.querySelector(".s1").onclick = () => gsap.to(window, { duration: 2, scrollTo: { y: ".section1" } });
+        document.querySelector(".s2").onclick = () => gsap.to(window, { duration: 2, scrollTo: { y: ".section2" } });
+        document.querySelector(".s3").onclick = () => gsap.to(window, { duration: 2, scrollTo: { y: ".section3" } });
+        document.querySelector(".s4").onclick = () => gsap.to(window, { duration: 2, scrollTo: { y: ".section4" } });
+        document.querySelector(".s5").onclick = () => gsap.to(window, { duration: 2, scrollTo: { y: ".section5" } });
+
+    </script>
+
+</body>
+
+</html>
