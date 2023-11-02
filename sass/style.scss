@@ -143,7 +143,49 @@ $a : 30px !default;
 
 }
 
+//單位 在做運算時要注意
+.w {
+  width: 10 + 10 +px;
+  height: 100 - 10px;
+  margin: 100 * 100 + px;
+  // font: (100 / 10) + px;
+}
+
+
+@mixin bgc($color:black){
+  @if $color ==yellow {
+    background-color: rgb(255, 205, 5);
+  }
+
+  @else if $color ==black {
+    background-color: #333;
+  }
+  @else if $color ==red {
+    background-color: #fd3d08;
+  }
+
+}
 
 
 
 
+.area {
+ @include bgc(red);
+ background-color: red;
+}
+
+
+@mixin fontstyle($fontfmaily : zh){
+     
+  @if $fontfmaily == "zh"{
+      font-family:"微軟正黑";
+  }@else if $fontfmaily == "en" {
+      font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+}
+
+
+span {
+  @include fontstyle(en);
+
+}

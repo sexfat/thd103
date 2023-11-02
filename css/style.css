@@ -188,4 +188,19 @@ header .wrapper_inner .logo {
   background-color: #f20;
 }
 
+.w {
+  width: 20px;
+  height: 90px;
+  margin: 10000px;
+}
+
+.area {
+  background-color: #fd3d08;
+  background-color: red;
+}
+
+span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /*# sourceMappingURL=style.css.map */
