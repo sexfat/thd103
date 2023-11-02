@@ -3,7 +3,7 @@
 body {
   font-size: 20px;
   font-family: "Microsoft JhengHei";
-  margin: 10px auto 10px;
+  margin: 0;
   padding: 0;
   color: #666;
   background-color: rgb(171, 255, 162);
@@ -11,57 +11,6 @@ body {
 
 .a1 {
   margin: 20px;
-}
-
-.container .wrapper {
-  width: 1200px;
-  margin: 0 auto;
-}
-.container .wrapper h1 {
-  font-size: 50px;
-}
-.container .wrapper nav {
-  width: 100%;
-}
-.container .wrapper nav::before {
-  content: "";
-}
-.container .wrapper nav ul {
-  list-style: none;
-  display: flex;
-}
-.container .wrapper nav ul li {
-  min-width: 120px;
-  background-color: #e4e4e4;
-}
-.container .wrapper nav ul li a {
-  color: #fa1212;
-  text-decoration: none;
-}
-.container .wrapper nav ul li a:hover {
-  color: rgb(255, 174, 0);
-}
-.container .wrapper .content .btn {
-  padding: 10px;
-  text-align: center;
-  max-width: 200px;
-  cursor: pointer;
-}
-.container .wrapper .content .btn-blue {
-  background-color: #0004f6;
-  transition: 0.3s all ease;
-  color: #fff;
-}
-.container .wrapper .content .btn-blue:hover {
-  background-color: #001d7d;
-}
-.container .wrapper .content .btn-red {
-  background-color: #f20;
-  color: #fff;
-}
-.container .wrapper .content .btn-yellow {
-  background-color: rgb(246, 255, 0);
-  color: #fff;
 }
 
 .spec {
@@ -73,9 +22,15 @@ body {
 
 .aa {
   margin: auto;
-  width: 300px;
+  width: 400px;
   height: 500px;
   background-color: #f20;
+}
+
+.container {
+  width: 100%;
+  background-color: #cad8c5;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */

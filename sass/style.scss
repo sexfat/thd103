@@ -54,80 +54,110 @@ $a : 30px !default;
 // }
 
 
-.container {
-  .wrapper {
-    width: 1200px;
+// .container {
+//   .wrapper {
+//     width: 1200px;
+//     margin: 0 auto;
+
+//     h1 {
+//       font-size: 50px;
+//     }
+
+//     nav {
+//       width: 100%;
+
+//       &::before {
+//         content: "";
+//       }
+
+//       //偽元素
+
+//       ul {
+//         list-style: none;
+//         display: flex;
+
+//         li {
+//           min-width: 120px;
+//           background-color: #e4e4e4;
+
+//           a {
+//             color: #fa1212;
+//             text-decoration: none;
+
+//             &:hover {
+//               color: rgb(255, 174, 0)
+//             }
+//           }
+//         }
+//       }
+//     }
+
+//     .content {
+//       .btn {
+//         padding: 10px;
+//         text-align: center;
+//         max-width: 200px;
+//         cursor: pointer;
+
+//         &-blue {
+//           background-color: #0004f6;
+//           transition: .3s all ease;
+//           color: #fff;
+
+//           &:hover {
+//             background-color: #001d7d;
+//           }
+//         }
+
+//         &-red {
+//           background-color: #f20;
+//           color: #fff;
+//         }
+
+//         &-yellow {
+//           background-color: rgb(246, 255, 0);
+//           color: #fff;
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+@mixin center($w) {
+  margin: auto;
+  width: $w;
+}
+
+.spec {
+  @include center(300px);
+  height: 400px;
+  background-color: #eaff00;
+}
+
+.aa {
+  @include center(400px);
+  height: 500px;
+  background-color: #f20;
+
+}
+
+
+
+@mixin layout($w) {
+  @if $w ==100 {
+    width: 100%;
+  }
+
+  @else {
+    width: $w;
     margin: 0 auto;
-    h1 {
-      font-size: 50px;
-    }
-    nav {
-      width: 100%;
-      &::before {
-        content: "";
-      }//偽元素
-
-      ul {
-        list-style: none;
-        display: flex;
-
-        li {
-          min-width: 120px;
-          background-color: #e4e4e4;
-          a {
-             color : #fa1212;
-             text-decoration: none;
-             &:hover {
-               color:rgb(255, 174, 0)
-             }
-          }
-        }
-      }
-    }
-    .content {
-      .btn {
-        padding: 10px;
-        text-align: center;
-        max-width: 200px;
-        cursor: pointer;
-        &-blue {
-          background-color: #0004f6;
-          transition: .3s all ease;
-          color : #fff;
-          &:hover {
-            background-color: #001d7d;
-          }
-        }
-        &-red {
-           background-color: #f20;
-           color : #fff;
-        }
-        &-yellow {
-          background-color: rgb(246, 255, 0);
-          color : #fff;
-       }
-      }
-    }
   }
 }
 
 
-@mixin center(){
-  margin : auto;
-  width:  300px;
+.container {
+  @include layout(100);
+  background-color: #cad8c5;
+  height: 100vh;
 }
-
-.spec {
-   @include center();
-   height: 400px;
-   background-color: #eaff00;
-
-}
-
-.aa {
-   @include center();
-   height: 500px;
-   background-color: #f20;
-
-}
-
