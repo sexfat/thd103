@@ -218,7 +218,7 @@ span {
 }
 
 
-$images : a1 a2 a3 b1 b2 b3;
+$images : a1 a2 a3 b1 b2 b3; // list
 
 
 @each $i in $images {
@@ -229,3 +229,31 @@ $images : a1 a2 a3 b1 b2 b3;
        background-size: cover;
    } 
 }
+
+
+$titles : (
+  // key : value ,
+  h1 : 50px,
+  h2 : 46px,
+  h3 : 38px,
+  h4 : 30px,
+  h5 : 26px,
+  h6 : 18px,
+  span : 12px,
+  div : 14px
+);
+
+
+@each $k , $v  in $titles {
+    #{$k} {
+       font-size: $v;
+       font-weight: 400;
+       font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+}
+
+
+
+
+
+
