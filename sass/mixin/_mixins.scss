@@ -125,11 +125,13 @@
       @if $name == null {
           .col-#{$i} {
               width: prec($i / $col) * 100%;
+              position: relative;
           }
       }
       @else {
           .col-#{$name}-#{$i} {
               width: prec($i / $col) * 100%;
+              position: relative;
           }
       }
   }

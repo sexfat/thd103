@@ -1,12 +1,12 @@
 .container {
   @include layout(100);
-  background-color: #f1f1f1;
-  @include t(){
-    background-color: #bcffb4;
-  }
-  @include m(){
-     background-color: #aafcff;
-  }
+  // background-color: #f1f1f1;
+  // @include t(){
+  //   background-color: #bcffb4;
+  // }
+  // @include m(){
+  //    background-color: #aafcff;
+  // }
 
   .content {
     .spec1 {

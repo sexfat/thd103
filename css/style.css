@@ -150,164 +150,162 @@ h2 {
 
 .col-1 {
   width: 8.33333%;
+  position: relative;
 }
 
 .col-2 {
   width: 16.66667%;
+  position: relative;
 }
 
 .col-3 {
   width: 25%;
+  position: relative;
 }
 
 .col-4 {
   width: 33.33333%;
+  position: relative;
 }
 
 .col-5 {
   width: 41.66667%;
+  position: relative;
 }
 
 .col-6 {
   width: 50%;
+  position: relative;
 }
 
 .col-7 {
   width: 58.33333%;
+  position: relative;
 }
 
 .col-8 {
   width: 66.66667%;
+  position: relative;
 }
 
 .col-9 {
   width: 75%;
+  position: relative;
 }
 
 .col-10 {
   width: 83.33333%;
+  position: relative;
 }
 
 .col-11 {
   width: 91.66667%;
+  position: relative;
 }
 
 .col-12 {
   width: 100%;
+  position: relative;
 }
 
-@media screen and (min-width: 768px) {
+@media all and (max-width: 996px) {
   .col-md-1 {
     width: 8.33333%;
+    position: relative;
   }
   .col-md-2 {
     width: 16.66667%;
+    position: relative;
   }
   .col-md-3 {
     width: 25%;
+    position: relative;
   }
   .col-md-4 {
     width: 33.33333%;
+    position: relative;
   }
   .col-md-5 {
     width: 41.66667%;
+    position: relative;
   }
   .col-md-6 {
     width: 50%;
+    position: relative;
   }
   .col-md-7 {
     width: 58.33333%;
+    position: relative;
   }
   .col-md-8 {
     width: 66.66667%;
+    position: relative;
   }
   .col-md-9 {
     width: 75%;
+    position: relative;
   }
   .col-md-10 {
     width: 83.33333%;
+    position: relative;
   }
   .col-md-11 {
     width: 91.66667%;
+    position: relative;
   }
   .col-md-12 {
     width: 100%;
+    position: relative;
   }
 }
-@media screen and (min-width: 1024px) {
-  .col-lg-1 {
+@media all and (max-width: 720px) {
+  .col-sm-1 {
     width: 8.33333%;
+    position: relative;
   }
-  .col-lg-2 {
+  .col-sm-2 {
     width: 16.66667%;
+    position: relative;
   }
-  .col-lg-3 {
+  .col-sm-3 {
     width: 25%;
+    position: relative;
   }
-  .col-lg-4 {
+  .col-sm-4 {
     width: 33.33333%;
+    position: relative;
   }
-  .col-lg-5 {
+  .col-sm-5 {
     width: 41.66667%;
+    position: relative;
   }
-  .col-lg-6 {
+  .col-sm-6 {
     width: 50%;
+    position: relative;
   }
-  .col-lg-7 {
+  .col-sm-7 {
     width: 58.33333%;
+    position: relative;
   }
-  .col-lg-8 {
+  .col-sm-8 {
     width: 66.66667%;
+    position: relative;
   }
-  .col-lg-9 {
+  .col-sm-9 {
     width: 75%;
+    position: relative;
   }
-  .col-lg-10 {
+  .col-sm-10 {
     width: 83.33333%;
+    position: relative;
   }
-  .col-lg-11 {
+  .col-sm-11 {
     width: 91.66667%;
+    position: relative;
   }
-  .col-lg-12 {
+  .col-sm-12 {
     width: 100%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .col-xl-1 {
-    width: 8.33333%;
-  }
-  .col-xl-2 {
-    width: 16.66667%;
-  }
-  .col-xl-3 {
-    width: 25%;
-  }
-  .col-xl-4 {
-    width: 33.33333%;
-  }
-  .col-xl-5 {
-    width: 41.66667%;
-  }
-  .col-xl-6 {
-    width: 50%;
-  }
-  .col-xl-7 {
-    width: 58.33333%;
-  }
-  .col-xl-8 {
-    width: 66.66667%;
-  }
-  .col-xl-9 {
-    width: 75%;
-  }
-  .col-xl-10 {
-    width: 83.33333%;
-  }
-  .col-xl-11 {
-    width: 91.66667%;
-  }
-  .col-xl-12 {
-    width: 100%;
+    position: relative;
   }
 }
 /* --------------------------------------- */
@@ -413,17 +411,6 @@ header .wrapper_inner .logo {
 
 .container {
   width: 100%;
-  background-color: #f1f1f1;
-}
-@media all and (max-width: 996px) {
-  .container {
-    background-color: #bcffb4;
-  }
-}
-@media all and (max-width: 720px) {
-  .container {
-    background-color: #aafcff;
-  }
 }
 .container .content .spec1 {
   width: 800px;
@@ -673,6 +660,19 @@ span {
 
 .darken100 {
   background-color: #08b125;
+}
+
+.rect1 {
+  height: 150px;
+}
+
+.box10 {
+  width: 150px;
+  height: 140px;
+  background-color: #f20;
+  position: absolute;
+  left: 100px;
+  top: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

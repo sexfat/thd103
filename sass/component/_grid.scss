@@ -45,19 +45,26 @@
 
 
 @include grid(12);
-
-
-@media screen and (min-width:768px) {
+@include t(){
     @include grid(12 , md);
 }
-
-@media screen and (min-width:1024px) {
-    @include grid(12 ,lg);
+@include m(){
+    @include grid(12 , sm);
 }
 
-@media screen and (min-width:1200px) {
-    @include grid(12 , xl);
-}
+
+
+// @media screen and (min-width:768px) {
+//     @include grid(12 , md);
+// }
+
+// @media screen and (min-width:1024px) {
+//     @include grid(12 ,lg);
+// }
+
+// @media screen and (min-width:1200px) {
+//     @include grid(12 , xl);
+// }
 
 /* --------------------------------------- */
 .row-cols-1 .col {
