@@ -184,11 +184,19 @@ span {
 }
 
 // // color 
-@for $i from 1 through 10 {
-  .lighten#{$i * 10} {
-    background-color: lighten(#f100b1, $i * 5);
+
+@mixin color($color) {
+  @for $i from 1 through 10 {
+    .lighten#{$i * 10} {
+      background-color: lighten($color, $i * 5);
+    }
   }
 }
+
+@include color(rgb(0, 254, 182))
+
+
+
 
 // .dark {
 //   color: darken(#fff , 50);
