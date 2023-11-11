@@ -36,12 +36,6 @@
 // .col-10 { width: 83.333333%;}
 // .col-11 { width: 91.666666%;}
 // .col-12 {width: 100%;}
-// 小數點後五位 
-
-@function prec($value , $p: 7) {
-    $f : pow(10, $p);
-    @return round($value * $f) / $f
-};
 
 
 

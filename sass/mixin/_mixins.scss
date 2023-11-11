@@ -1,4 +1,9 @@
+// 小數點後五位 
 
+@function prec($value , $p: 7) {
+  $f : pow(10, $p);
+  @return round($value * $f) / $f
+};
 @mixin center($w) {
     margin: auto;
     width: $w;
@@ -109,6 +114,9 @@
     }
   }
 }
+
+
+
 
 
 //   grid system
