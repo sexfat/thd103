@@ -236,11 +236,11 @@ $colors : ( //  k : v
   primary : #5188F6,
   secondary : #9B5AF6,
   success : #22C55E,
-  warning : #F59E0B
-  ); 
-  
+  warning : #F59E0B,
+  error : #ef4444);
 
-  @each $k , $v in $colors {
+
+@each $k , $v in $colors {
   .#{$k}-bgc {
     background-color: $v;
   }
@@ -248,12 +248,22 @@ $colors : ( //  k : v
   .#{$k}-color {
     color: $v
   }
+
   .#{$k}-btn {
     background-color: $v;
     transition: .3s all ease;
     cursor: pointer;
+
     &:hover {
-      background-color: darken($v , 20); 
-    }   
-  }  
+      background-color: darken($v , 20);
+    }
+  }
+}
+
+
+@for $i from 1 through 10 {
+  .border-radius-#{$i} {
+    border-radius: $i * 4px;
+
+  }
 }

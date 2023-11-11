@@ -819,4 +819,61 @@ span {
   background-color: #945f06;
 }
 
+.error-bgc {
+  background-color: #ef4444;
+}
+
+.error-color {
+  color: #ef4444;
+}
+
+.error-btn {
+  background-color: #ef4444;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.error-btn:hover {
+  background-color: #bd1010;
+}
+
+.border-radius-1 {
+  border-radius: 4px;
+}
+
+.border-radius-2 {
+  border-radius: 8px;
+}
+
+.border-radius-3 {
+  border-radius: 12px;
+}
+
+.border-radius-4 {
+  border-radius: 16px;
+}
+
+.border-radius-5 {
+  border-radius: 20px;
+}
+
+.border-radius-6 {
+  border-radius: 24px;
+}
+
+.border-radius-7 {
+  border-radius: 28px;
+}
+
+.border-radius-8 {
+  border-radius: 32px;
+}
+
+.border-radius-9 {
+  border-radius: 36px;
+}
+
+.border-radius-10 {
+  border-radius: 40px;
+}
+
 /*# sourceMappingURL=style.css.map */
