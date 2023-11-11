@@ -269,3 +269,17 @@ $colors : ( //  k : v
 
   }
 }
+
+
+.light {
+    color : #eaff00
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.abc {
+ @extend .light;
+ @extend .font-16
+}

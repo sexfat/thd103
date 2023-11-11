@@ -876,4 +876,12 @@ span {
   border-radius: 40px;
 }
 
+.light, .abc {
+  color: #eaff00;
+}
+
+.font-16, .abc {
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=style.css.map */
