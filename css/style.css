@@ -188,12 +188,6 @@ header .wrapper_inner .logo {
   background-color: #f20;
 }
 
-.w {
-  width: 20px;
-  height: 90px;
-  margin: 10000px;
-}
-
 .area {
   background-color: #fd3d08;
   background-color: red;
@@ -201,6 +195,126 @@ header .wrapper_inner .logo {
 
 span {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.w1 {
+  width: 1px;
+}
+
+.w2 {
+  width: 2px;
+}
+
+.w3 {
+  width: 3px;
+}
+
+.w4 {
+  width: 4px;
+}
+
+.w5 {
+  width: 5px;
+}
+
+.w6 {
+  width: 6px;
+}
+
+.w7 {
+  width: 7px;
+}
+
+.w8 {
+  width: 8px;
+}
+
+.w9 {
+  width: 9px;
+}
+
+.w10 {
+  width: 10px;
+}
+
+.top10 {
+  margin-top: 10px;
+}
+
+.top20 {
+  margin-top: 20px;
+}
+
+.top30 {
+  margin-top: 30px;
+}
+
+.top40 {
+  margin-top: 40px;
+}
+
+.top50 {
+  margin-top: 50px;
+}
+
+.top60 {
+  margin-top: 60px;
+}
+
+.top70 {
+  margin-top: 70px;
+}
+
+.top80 {
+  margin-top: 80px;
+}
+
+.top90 {
+  margin-top: 90px;
+}
+
+.top100 {
+  margin-top: 100px;
+}
+
+.top110 {
+  margin-top: 110px;
+}
+
+.top120 {
+  margin-top: 120px;
+}
+
+.top130 {
+  margin-top: 130px;
+}
+
+.top140 {
+  margin-top: 140px;
+}
+
+.top150 {
+  margin-top: 150px;
+}
+
+.top160 {
+  margin-top: 160px;
+}
+
+.top170 {
+  margin-top: 170px;
+}
+
+.top180 {
+  margin-top: 180px;
+}
+
+.top190 {
+  margin-top: 190px;
+}
+
+.top200 {
+  margin-top: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */

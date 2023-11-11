@@ -129,12 +129,12 @@
 }
 
 //單位 在做運算時要注意
-.w {
-  width: 10 + 10 +px;
-  height: 100 - 10px;
-  margin: 100 * 100 + px;
-  // font: (100 / 10) + px;
-}
+// .w {
+//   width: 10 + 10 +px;
+//   height: 100 - 10px;
+//   margin: 100 * 100 + px;
+//   // font: (100 / 10) + px;
+// }
 
 
 
@@ -153,3 +153,30 @@ span {
   @include fontstyle(en);
 
 }
+
+
+// for 
+
+
+@for $i from 1 through 10{
+    .w#{$i}{
+     width: $i + px;
+    }    
+}
+
+
+
+@mixin space($s , $dir:top) {
+  @for $i  from 1 through $s {
+    .#{$dir}#{$i * 10} {
+       margin-#{$dir}: $i  *  10px;
+    } 
+  } 
+}
+
+@include space(20 , top)
+
+
+
+
+
