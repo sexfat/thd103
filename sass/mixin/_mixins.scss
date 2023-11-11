@@ -112,6 +112,19 @@
 
 
 //   grid system
-
+@mixin grid($col , $name : null) {
+  @for $i from 1 through $col {
+      @if $name == null {
+          .col-#{$i} {
+              width: prec($i / $col) * 100%;
+          }
+      }
+      @else {
+          .col-#{$name}-#{$i} {
+              width: prec($i / $col) * 100%;
+          }
+      }
+  }
+}
 
 
