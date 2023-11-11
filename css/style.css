@@ -675,4 +675,46 @@ span {
   top: 40px;
 }
 
+.slider-a1 {
+  background-image: url("./images/a1.jpg");
+  background-repeat: repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+.slider-a2 {
+  background-image: url("./images/a2.jpg");
+  background-repeat: repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+.slider-a3 {
+  background-image: url("./images/a3.jpg");
+  background-repeat: repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+.slider-b1 {
+  background-image: url("./images/b1.jpg");
+  background-repeat: repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+.slider-b2 {
+  background-image: url("./images/b2.jpg");
+  background-repeat: repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+.slider-b3 {
+  background-image: url("./images/b3.jpg");
+  background-repeat: repeat;
+  width: 100%;
+  background-size: cover;
+}
+
 /*# sourceMappingURL=style.css.map */

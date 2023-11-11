@@ -215,6 +215,17 @@ span {
    position: absolute;
    left:  100px;
    top: 40px
+}
 
 
+$images : a1 a2 a3 b1 b2 b3;
+
+
+@each $i in $images {
+   .slider-#{$i} {
+       background-image: url('./images/#{$i}.jpg');
+       background-repeat: repeat;
+       width: 100%;
+       background-size: cover;
+   } 
 }
