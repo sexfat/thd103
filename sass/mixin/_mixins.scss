@@ -92,6 +92,26 @@
 }
 
 
+// color
+@mixin color_l($color) {
+  @for $i from 1 through 10 {
+    .lighten#{$i * 10} {
+      background-color: lighten($color, $i * 5);
+    }
+  }
+}
+
+
+@mixin color_d($color) {
+  @for $i from 1 through 10 {
+    .darken#{$i * 10} {
+      background-color: darken($color, $i * 5);
+    }
+  }
+}
+
+
+//   grid system
 
 
 

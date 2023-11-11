@@ -17,6 +17,7 @@
 @import "component/input";
 @import "component/body";
 @import "component/title";
+@import "component/grid";
 
 
 // layout
@@ -185,15 +186,10 @@ span {
 
 // // color 
 
-@mixin color($color) {
-  @for $i from 1 through 10 {
-    .lighten#{$i * 10} {
-      background-color: lighten($color, $i * 5);
-    }
-  }
-}
 
-@include color(rgb(0, 254, 182))
+
+@include color_l(rgb(0, 254, 182));
+@include color_d(rgb(188, 252, 199));
 
 
 
