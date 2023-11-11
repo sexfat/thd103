@@ -2,7 +2,7 @@
 
 @function prec($value , $p: 7) {
   $f : pow(10, $p);
-  @return round($value * $f) / $f
+  @return math.div(round($value * $f) ,$f);
 };
 @mixin center($w) {
     margin: auto;
@@ -119,18 +119,19 @@
 
 
 
+
 //   grid system
 @mixin grid($col , $name : null) {
   @for $i from 1 through $col {
       @if $name == null {
           .col-#{$i} {
-              width: prec($i / $col) * 100%;
+              width: prec(math.div($i , $col)) * 100%;
               position: relative;
           }
       }
       @else {
           .col-#{$name}-#{$i} {
-              width: prec($i / $col) * 100%;
+              width: prec(math.div($i , $col)) * 100%;
               position: relative;
           }
       }

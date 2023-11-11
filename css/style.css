@@ -110,16 +110,50 @@ body {
 
 h1 {
   font-size: 50px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h2 {
-  font-family: Noto Sans TC;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 0em;
-  text-align: center;
-  margin-bottom: 40px;
+  font-size: 46px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+  font-size: 38px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h5 {
+  font-size: 26px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {
@@ -717,52 +751,72 @@ span {
   background-size: cover;
 }
 
-h1 {
-  font-size: 50px;
-  font-weight: 400;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.primary-bgc {
+  background-color: #5188F6;
 }
 
-h2 {
-  font-size: 46px;
-  font-weight: 400;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.primary-color {
+  color: #5188F6;
 }
 
-h3 {
-  font-size: 38px;
-  font-weight: 400;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.primary-btn {
+  background-color: #5188F6;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.primary-btn:hover {
+  background-color: #0b4fd6;
 }
 
-h4 {
-  font-size: 30px;
-  font-weight: 400;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.secondary-bgc {
+  background-color: #9B5AF6;
 }
 
-h5 {
-  font-size: 26px;
-  font-weight: 400;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.secondary-color {
+  color: #9B5AF6;
 }
 
-h6 {
-  font-size: 18px;
-  font-weight: 400;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.secondary-btn {
+  background-color: #9B5AF6;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.secondary-btn:hover {
+  background-color: #640cde;
 }
 
-span {
-  font-size: 12px;
-  font-weight: 400;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.success-bgc {
+  background-color: #22C55E;
 }
 
-div {
-  font-size: 14px;
-  font-weight: 400;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.success-color {
+  color: #22C55E;
+}
+
+.success-btn {
+  background-color: #22C55E;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.success-btn:hover {
+  background-color: #136e34;
+}
+
+.warning-bgc {
+  background-color: #F59E0B;
+}
+
+.warning-color {
+  color: #F59E0B;
+}
+
+.warning-btn {
+  background-color: #F59E0B;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.warning-btn:hover {
+  background-color: #945f06;
 }
 
 /*# sourceMappingURL=style.css.map */

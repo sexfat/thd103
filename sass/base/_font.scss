@@ -1,10 +1,19 @@
 //====  字體大小  ====
 
-// 標題字大小
-$title-1 : 52px;
-$title-2 : 42px;
-$title-3 : 28px;
-$title-4 : 20px;
+// 標題自大小
+
+$titles : (
+  // key : value ,
+  h1 : 50px,
+  h2 : 46px,
+  h3 : 38px,
+  h4 : 30px,
+  h5 : 26px,
+  h6 : 18px,
+  span : 12px,
+  div : 14px
+);
+
 
 //內容文字
 $fontsize : 16px; //數值

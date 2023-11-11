@@ -1,7 +1,7 @@
 //  vonder
 // @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-
+@use "sass:math";
 //base
 @import "base/var";
 @import "base/reset";
@@ -204,17 +204,17 @@ span {
 
 
 .rect1 {
-   height: 150px;
+  height: 150px;
 }
 
 
 .box10 {
-   width: 150px;
-   height: 140px;
-   background-color: #f20;
-   position: absolute;
-   left:  100px;
-   top: 40px
+  width: 150px;
+  height: 140px;
+  background-color: #f20;
+  position: absolute;
+  left: 100px;
+  top: 40px
 }
 
 
@@ -222,38 +222,38 @@ $images : a1 a2 a3 b1 b2 b3; // list
 
 
 @each $i in $images {
-   .slider-#{$i} {
-       background-image: url('./images/#{$i}.jpg');
-       background-repeat: repeat;
-       width: 100%;
-       background-size: cover;
-   } 
+  .slider-#{$i} {
+    background-image: url('./images/#{$i}.jpg');
+    background-repeat: repeat;
+    width: 100%;
+    background-size: cover;
+  }
 }
 
 
-$titles : (
-  // key : value ,
-  h1 : 50px,
-  h2 : 46px,
-  h3 : 38px,
-  h4 : 30px,
-  h5 : 26px,
-  h6 : 18px,
-  span : 12px,
-  div : 14px
-);
+// color 
+$colors : ( //  k : v 
+  primary : #5188F6,
+  secondary : #9B5AF6,
+  success : #22C55E,
+  warning : #F59E0B
+  ); 
+  
 
+  @each $k , $v in $colors {
+  .#{$k}-bgc {
+    background-color: $v;
+  }
 
-@each $k , $v  in $titles {
-    #{$k} {
-       font-size: $v;
-       font-weight: 400;
-       font-family:Verdana, Geneva, Tahoma, sans-serif
-    }
+  .#{$k}-color {
+    color: $v
+  }
+  .#{$k}-btn {
+    background-color: $v;
+    transition: .3s all ease;
+    cursor: pointer;
+    &:hover {
+      background-color: darken($v , 20); 
+    }   
+  }  
 }
-
-
-
-
-
-
