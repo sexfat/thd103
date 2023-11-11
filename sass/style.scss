@@ -142,8 +142,8 @@
 
 
 .area {
- @include bgc(red);
- background-color: red;
+  @include bgc(red);
+  background-color: red;
 }
 
 
@@ -158,44 +158,42 @@ span {
 // for 
 
 
-@for $i from 1 through 10{
-    .w#{$i}{
-     width: $i + px;
-    }    
+@for $i from 1 through 10 {
+  .w#{$i} {
+    width: $i + px;
+  }
 }
 
 
 
-@mixin space($s , $dir:top) {
-  @for $i  from 1 through $s {
+@mixin space($s , $dir: top) {
+  @for $i from 1 through $s {
     .#{$dir}#{$i * 10} {
-       margin-#{$dir}: $i  *  10px;
-    } 
-  } 
-}
-
-
-@mixin space($s) {
-  @for $i  from 1 through $s {
-    .top#{$i * 10} {
-       margin-top: $i  *  10px;
+      margin-#{$dir}: $i * 10px;
     }
-    .left#{$i * 10} {
-      margin-left: $i  *  10px;
-   }
-   .right#{$i * 10} {
-    margin-right: $i  *  10px;
-   }
-   .bottom#{$i * 10} {
-    margin-bottom: $i  *  10px;
- }    
-  } 
+  }
 }
+
 
 @include space(20);
 
 
+.rect {
+  width: 300px;
+  height: 50px;
+}
 
+// // color 
+@for $i from 1 through 10 {
+  .lighten#{$i * 10} {
+    background-color: lighten(#f100b1, $i * 5);
+  }
+}
 
+// .dark {
+//   color: darken(#fff , 50);
+// }
 
-
+// .lighten {
+//   color: lighten(#000 , 100)
+// }
